@@ -1,0 +1,182 @@
+.herosection{
+    margin: 5%;
+}
+.herosection2{
+    margin: 5%;
+}
+.branding{
+    margin: 5%;
+}
+.logos{
+    margin: 5%;
+}
+.designs{
+    margin: 5%;
+}
+.elements{
+    margin: 5%;
+}
+.behancecheck{
+    margin: 5%;
+    align-items: center;
+}
+.homestayheading{
+    font-size: 3vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 6vmin;
+    color: #000000;
+}
+.homestayheadingdetails{
+    font-size: 4vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 8vmin;
+    color: #000000;
+}
+.heroabout{
+    font-size: 3vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 6vmin;
+    color: #000000;
+    text-align: justify;
+}
+.heroimage1{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 6vmin;
+}
+.brandingimage1{
+    width: 100%;
+    height: auto;
+    margin-bottom: 6vmin;
+}
+.row1{
+    width: 100%;
+    display: flex;
+}
+.brandingheading{
+    font-size: 4vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 8vmin;
+    color: #000000;
+    text-align: center;
+}
+.logoimage1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    margin-bottom: 4vmin;
+}
+.leftlogo{
+    margin-left: 20%;
+}
+.rightlogo{
+    margin-right: 20%;
+    margin-top: 50%;
+}
+.logoabout{
+    font-size: 2.5vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 6vmin;
+    color: #000000;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 10vmin;
+}
+@media screen and (max-width: 770px)
+{
+    .logoimage1{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 4vmin;
+    }
+    .logoabout{
+        font-size: 2.5vmin;
+        font-family: 'Dosis';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 6vmin;
+        color: #000000;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 4vmin;
+    }
+    .rightlogo{
+        margin-right: 20%;
+        margin-top: 100%;
+    }
+}
+.designsheading{
+    font-size: 4vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 6vmin;
+    color: #000000;
+}
+.designimage1{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 6vmin;
+}
+.elementimage1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    margin-bottom: 10vmin;
+}
+.leftelements{
+    margin-left: 25%;
+}
+.rightelements{
+    margin-right: 25%;
+    margin-top: 30%;
+}
+.elementheading{
+    font-size: 3vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 6vmin;
+    text-align: center;
+    color: #000000;
+}
+.behancetext{
+    font-size: 5vmin;
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 8vmin;
+    color: #EB5757;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.behancetext:hover{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #6e2f2f;
+}
+@media screen and (max-width: 1000px)
+{
+    #Vector{
+        display: none;
+    }
+}

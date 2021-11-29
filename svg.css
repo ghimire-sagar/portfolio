@@ -1,0 +1,494 @@
+/* Background leaf  */
+#leaf{
+    animation-name: moveleaf;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    transform-origin: right;
+  }
+  @keyframes moveleaf {
+    0%{
+        transform: rotate(3deg);
+    }
+    100%
+    {
+        transform: rotate(-3deg);
+    }
+  }
+  /* Background images  */
+  #pie{
+    animation-name: scalepie;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes scalepie{
+    0%{
+        transform: scale(1,1);
+    }
+    100%
+    {
+        transform: scale(1.1,1.1);
+    }
+  }
+  #play{
+    animation-name: scaleplay;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes scaleplay{
+    0%{
+        transform: scale(1,1);
+    }
+    100%
+    {
+        transform: scale(1.1,1.1);
+    }
+  }
+  #map{
+    animation-name: scalemap;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes scalemap{
+    0%{
+        transform: scale(1,1);
+    }
+    100%
+    {
+        transform: scale(1.1,1.1);
+    }
+  }
+  #message{
+    animation-name: scalemessage;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes scalemessage{
+    0%{
+        transform: scale(1,1);
+    }
+    100%
+    {
+        transform: scale(1.1,1.1);
+    }
+  }
+  #box{
+    animation-name: scalebox;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes scalebox{
+    0%{
+        transform: scale(1,1);
+    }
+    100%
+    {
+        transform: scale(1.1,1.1);
+    }
+  }
+  #search{
+    animation-name: scalesearch;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  @keyframes scalesearch{
+    0%{
+        transform: scale(1,1);
+    }
+    100%
+    {
+        transform: scale(1.1,1.1);
+    }
+  }
+
+    /* Leaves  */
+    #leaf1{
+        animation-name: scaleplant1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes scaleplant1{
+        0%{
+            transform: rotate(3deg);
+        }
+        100%
+        {
+            transform: rotate(-3deg);
+        }
+      }
+      #leaf2{
+        animation-name: scaleplant2;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes scaleplant2{
+        0%{
+            transform: rotate(-2deg);
+        }
+        100%
+        {
+
+            transform: rotate(2deg);
+        }
+      }
+      #leaf3{
+        animation-name: scaleplant3;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes scaleplant3{
+        0%{
+            transform: rotate(1deg);
+        }
+        100%
+        {
+
+            transform: rotate(-1deg);
+        }
+      }
+      #leaf4{
+        animation-name: scaleplant4;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes scaleplant4{
+        0%{
+            transform: rotate(-3deg);
+        }
+        100%
+        {
+
+            transform: rotate(3deg);
+        }
+      }
+      #leaf6{
+        animation-name: scaleplant6;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes scaleplant6{
+        0%{
+            transform: rotate(1deg);
+        }
+        100%
+        {
+
+            transform: rotate(-1deg);
+        }
+      }
+      #leaf5{
+        animation-name: scaleplant5;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes scaleplant5{
+        0%{
+            transform: rotate(-3deg);
+        }
+        100%
+        {
+
+            transform: rotate(3deg);
+        }
+      }
+      #leaf3_2{
+        animation-name: scaleplant3_2;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes scaleplant3_2{
+        0%{
+            transform: rotate(3deg);
+        }
+        100%
+        {
+
+            transform: rotate(-3deg);
+        }
+      }
+      /* heading man head  */
+      #head{
+        animation-name: manhead;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes manhead{
+        0%{
+            transform: rotate(1deg);
+        }
+        100%
+        {
+
+            transform: rotate(-1deg);
+        }
+      }
+      /* Man Movement */
+      #XMLID-17{
+        animation-name: foot;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: right;
+      }
+      @keyframes foot{
+        0%{
+            transform: rotate(2deg);
+        }
+        100%
+        {
+
+            transform: rotate(-2deg);
+        }
+      }
+      #face{
+        animation-name: head;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes head{
+        0%{
+            transform: rotate(-3deg);
+        }
+        100%
+        {
+
+            transform: rotate(3deg);
+        }
+      }
+      /* Ball Movement  */
+      .ball2{
+        offset-path: path ('M618.485 336.2C650.352 274.956 732.736 164.587 807.33 213.057C881.923 261.527 928.899 211.484 943.062 180.403');
+        offset-distance: 0;
+        animation: moveball1 2s infinite alternate;
+      }
+      
+      @keyframes moveball1 {
+          10% {
+              offset-distance: 10%;
+            }
+            100% {
+              offset-distance: 100%;
+            }
+          }
+        
+          /* Contact Svg  */
+
+          #phonehandle{
+            animation-name: handle;
+            animation-duration: 50ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform-box: fill-box;
+            transform-origin: center;
+          }
+          @keyframes handle{
+            0%{
+                transform: rotate(-2deg);
+            }
+            100%
+            {
+    
+              transform: rotate(2deg);
+            }
+          }
+          /* #wire{
+            animation-name: wire;
+            animation-duration: 50ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform-box: fill-box;
+            transform-origin: bottom;
+          }
+          @keyframes wire{
+            0%{
+                transform: rotate(-1deg);
+            }
+            100%
+            {
+    
+              transform: rotate(0deg);
+            }
+          } */
+          #phonecase{
+            animation-name: case;
+            animation-duration: 50ms;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform-box: fill-box;
+            transform-origin: center;
+          }
+          @keyframes case{
+            0%{
+                transform: rotate(-2deg);
+            }
+            100%
+            {
+    
+              transform: rotate(0deg);
+            }
+          }
+          #service{
+            animation-name: service;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transform-box: fill-box;
+            transform-origin: center;
+            animation-fill-mode: forwards;
+          }
+          @keyframes service{
+            0%{
+                transform: rotate(0deg);
+            }
+            60%, 100%{
+              transform: rotate(360deg);
+            }
+          }
+          #XMLID_13_{
+            animation-name: oval;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            transform-box: fill-box;
+            transform-origin: center;
+          }
+          @keyframes oval {
+            0%{
+              opacity: 0;        
+            }
+            30%,60% {
+              opacity: 1;
+              transform: scale(1.1,1.1);
+            }
+            100%{
+              opacity: 0;
+            }
+          }
+          #XMLID_16_{
+            animation-name: oval1;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            transform-box: fill-box;
+            transform-origin: center;
+          }
+          @keyframes oval1 {
+            0%{
+              opacity: 0;
+              
+            }
+            30%,70% {
+              opacity: 1;
+              transform: scale(1.1,1.1);
+            }
+            100%{
+              opacity: 0;
+            }
+          }
+          #XMLID_17_{
+            animation-name: oval2;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            transform-box: fill-box;
+            transform-origin: center;
+          }
+          @keyframes oval2 {
+            0%{
+              opacity: 0;
+              
+            }
+            50%,80% {
+              opacity: 1;
+              transform: scale(1.1,1.1);
+            }
+            100%{
+              opacity: 0;
+            }
+          }
+          #tower{
+            animation-name: signal;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            transform-box: fill-box;
+            transform-origin: center;
+            animation-direction: alternate;
+          }
+          @keyframes signal{
+            0%{
+                transform: translate(0,0) scale(1,1);
+            }
+            100%
+            {
+    
+              transform: translate(-3px,-3px) scale(1.1,1.1);
+            }
+          }

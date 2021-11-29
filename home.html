@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="designs.css">
+    <link rel="stylesheet" href="svg.css">
+    <script type="text/javascript" src="custom.js"></script>
+    <link rel="shortcut icon" href="images/sagar-logo.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+  <!-- Preloader  -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+    <script>
+      $(document).ready(function() {
+        
+        setTimeout(function(){
+          $('body').addClass('loaded');
+        }, 2000);
+        
+      });
+      </script>
+  
+  <!-- Preloader end  -->
+    <!-- Navbar area -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/sagar-logo.png" class="logo" alt="mylogo"></a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="designs.html">Designs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+          </ul>
+          <button class="btn btn-light" type="submit" id="git" onclick="window.location.href='contact.html';">Get in Touch</button>
+        </div>
+      </nav>
+      <!-- Navbar area end  -->
+      <!-- Header area  -->
+      <div class="header">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contents">
+                <h1 class="heading">Hi, I am Sagar,<br>UI/UX and Graphic Designer</h1>
+                <h3 class="address">Harisiddhi-29,Lalitpur</h3>
+                <p class="header-details">A highly self-motivated fast learning programmer fascinated with graphics design, web art and web development having good comprehension of programming.</p>
+              <button id="btn">
+                <a id="btnText" href="CV.docx">Download CV</a>
+                <div class="check-box">
+                  <svg class="buttontick" viewBox="0 0 51 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3219 37.2537L0.746847 20.6923C-0.248949 19.6973 -0.248949 18.0841 0.746847 17.089L4.35301 13.4857C5.3488 12.4907 6.96347 12.4907 7.95927 13.4857L19.125 24.6422L43.0407 0.746232C44.0365 -0.248744 45.6512 -0.248744 46.647 0.746232L50.2532 4.34952C51.249 5.3445 51.249 6.95774 50.2532 7.95281L20.9281 37.2538C19.9322 38.2488 18.3177 38.2488 17.3219 37.2537Z" fill="transparent"/>
+                    </svg>                    
+                </div>
+              </button>
+              <script>
+                var btn = document.getElementById("btn");
+                var btnText = document.getElementById("btnText");
+
+                btn.onclick = function(){
+                  btnText.innerHTML = "Downloaded";
+                  btn.classList.add("activebtn");
+                }
+              </script>
+              </div>
+            </div>
+            <div class="mystickymail">
+                <div class="stickymail-wrapper">
+                  <button class="stickymail" onclick="window.location.href='contact.html';"><svg class="mail" width="80" height="53" viewBox="0 0 80 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="80" height="53" rx="5" fill="white"/>
+                    <path d="M1.51943 0.645485C1.04749 0.358613 0.432356 0.508638 0.145485 0.980573C-0.141387 1.45251 0.00863773 2.06764 0.480573 2.35452L1.51943 0.645485ZM39.6601 25L39.1407 25.8545L39.6589 26.1695L40.1778 25.8556L39.6601 25ZM79.0177 2.35558C79.4902 2.06968 79.6415 1.45486 79.3556 0.982332C79.0697 0.509807 78.4549 0.358518 77.9823 0.644419L79.0177 2.35558ZM0.480573 2.35452L39.1407 25.8545L40.1796 24.1455L1.51943 0.645485L0.480573 2.35452ZM40.1778 25.8556L79.0177 2.35558L77.9823 0.644419L39.1425 24.1444L40.1778 25.8556Z" fill="url(#paint0_linear)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear" x1="-59.5" y1="30.5" x2="-38.3125" y2="-41.5264" gradientUnits="userSpaceOnUse">
+                    <stop offset="3.94624e-07" stop-color="#F15A29"/>
+                    <stop offset="1" stop-color="#FBB040"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+                  </button>
+                  <script>
+                    const stickymail = document.querySelector('.stickymail');
+                    stickymail.classList.remove('stickymail-wrapper');
+
+                    // Create the observer, same as before:
+                    const observer = new IntersectionObserver(entries => {
+                      entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                          stickymail.classList.remove('stickymail-wrapper');
+                          return;
+                        }
+                        
+                        stickymail.classList.add('stickymail-wrapper');
+                      });
+                    });
+                    observer.observe(document.querySelector('.mystickymail'));
+                  </script>          
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="background-image">
+              <svg class="myvector" width="900" height="400" viewBox="0 0 944 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="man-vector">
+                <g id="line1" filter="url(#filter0_d)">
+                <path id="route1" d="M618.485 336.2C650.352 274.956 732.736 164.587 807.33 213.057C881.923 261.527 928.899 211.484 943.062 180.403" stroke="#420E97" stroke-width="2" stroke-dasharray="4 4"/>
+                <g id="ball1" filter="url(#filter1_di)">
+                <circle cx="804" cy="212" r="9" fill="url(#paint0_radial)"/>
+                </g>
+                </g>
+                <g id="line2">
+                <path id="route2" d="M601.174 316.922C603.666 276.268 618.091 184.337 655.86 141.847C703.071 88.7343 707.793 89.9145 754.217 122.569C800.641 155.223 869.098 152.863 882.474 128.077C895.851 103.291 904.113 37.5887 941.882 1" stroke="#420E97" stroke-width="2" stroke-dasharray="4 4"/>
+                <g id="ball2" filter="url(#filter2_di)">
+                <circle cx="619" cy="215" r="9" fill="url(#paint1_radial)"/>
+                </g>
+                </g>
+                <g id="pie" filter="url(#filter3_d)">
+                <path id="XMLID 455" d="M750.665 175.682V210.305H778.611C780.893 189.787 769.771 176.537 750.665 175.682Z" fill="url(#paint2_linear)"/>
+                <path id="XMLID 451" d="M775.189 217.144C779.895 235.952 759.505 252.195 740.114 252.195C720.723 252.195 705.039 236.522 705.039 217.144C705.039 197.767 720.865 180.526 740.114 182.093L740.399 218.142L775.189 217.144Z" fill="url(#paint3_linear)"/>
+                </g>
+                <g id="message" filter="url(#filter4_d)">
+                <path id="XMLID 437" d="M687.991 315.765L617.698 289.976L634.522 244.096L704.816 269.885L687.991 315.765Z" fill="url(#paint4_linear)"/>
+                <path id="XMLID 449" d="M655.054 276.867C654.912 289.976 655.482 287.696 664.75 280.857C677.155 268.318 681.29 283.706 681.005 310.493L626.68 290.545C644.646 267.606 657.336 244.524 655.054 276.867Z" fill="white"/>
+                </g>
+                <g id="play" filter="url(#filter5_d)">
+                <path id="XMLID 450" d="M688.989 181.118L624.542 190.95L618.553 152.052L683.001 142.221L688.989 181.118Z" fill="url(#paint5_linear)"/>
+                <path id="XMLID 452" d="M644.788 157.751L647.783 177.556L665.463 164.733L644.788 157.751Z" fill="white"/>
+                </g>
+                <g id="map" filter="url(#filter6_d)">
+                <path id="XMLID 456" d="M733.475 133.251C729.91 117.863 712.658 108.459 716.65 91.0762C720.214 72.4109 746.877 70.9861 751.155 91.0762C755.29 110.881 738.18 114.301 733.475 133.251Z" fill="url(#paint6_linear)"/>
+                <path id="XMLID 454" d="M734.045 107.177C739.715 107.177 744.311 102.584 744.311 96.918C744.311 91.2523 739.715 86.6592 734.045 86.6592C728.376 86.6592 723.779 91.2523 723.779 96.918C723.779 102.584 728.376 107.177 734.045 107.177Z" fill="white"/>
+                </g>
+                <g id="box" filter="url(#filter7_d)">
+                <path id="XMLID 466" d="M853.245 169.007L769.691 150.485L790.081 58.4404L873.777 76.9632L853.245 169.007Z" fill="url(#paint7_linear)"/>
+                <path id="XMLID 469" d="M835.406 110.1L791.282 100.308L789.984 106.15L834.107 115.942L835.406 110.1Z" fill="white"/>
+                <path id="XMLID 468" d="M805.48 86.2246C810.362 86.2246 814.32 82.2695 814.32 77.3906C814.32 72.5118 810.362 68.5567 805.48 68.5567C800.597 68.5567 796.639 72.5118 796.639 77.3906C796.639 82.2695 800.597 86.2246 805.48 86.2246Z" fill="white"/>
+                <path id="XMLID 474" d="M813.954 144.247L783.054 137.389L781.91 142.535L812.81 149.393L813.954 144.247Z" fill="white"/>
+                <path id="XMLID 473" d="M816.069 135.145L785.169 128.287L784.025 133.434L814.925 140.291L816.069 135.145Z" fill="white"/>
+                <path id="XMLID 471" d="M850.688 124.915L788.888 111.2L787.064 119.406L848.864 133.122L850.688 124.915Z" fill="white"/>
+                <path id="XMLID 467" d="M847.398 101.649L793.671 89.7251L792.095 96.8188L845.822 108.742L847.398 101.649Z" fill="white"/>
+                <path id="XMLID 470" d="M848.962 139.916L824.465 134.479L819.334 157.568L843.831 163.005L848.962 139.916Z" fill="white"/>
+                </g>
+                <g id="search" filter="url(#filter8_d)">
+                <path id="XMLID 475" d="M889.946 262.675L862.736 237.199L867.523 232.067L894.733 257.544L889.946 262.675Z" fill="url(#paint8_linear)"/>
+                <path id="XMLID 477" d="M895.242 272.782L878.443 256.91L888.223 246.404L904.084 261.312C906.826 263.894 906.947 268.179 904.398 270.78L902.814 272.444C900.921 274.766 897.532 274.813 895.242 272.782Z" fill="url(#paint9_linear)"/>
+                <path id="XMLID 472" d="M844.772 250.533C861.059 254.541 877.509 244.595 881.513 228.319C885.518 212.043 875.561 195.601 859.274 191.593C842.987 187.586 826.537 197.531 822.532 213.807C818.528 230.083 828.485 246.526 844.772 250.533Z" fill="url(#paint10_linear)"/>
+                <path id="XMLID 476" d="M847.189 240.71C858.047 243.381 869.013 236.751 871.683 225.901C874.353 215.05 867.715 204.088 856.857 201.417C845.999 198.745 835.032 205.375 832.362 216.226C829.693 227.076 836.331 238.038 847.189 240.71Z" fill="white"/>
+                </g>
+                <g id="pot">
+                <path id="XMLID 422" d="M143.783 358.033L159.957 405.953L204.721 406.749L216.339 358.033H143.783Z" fill="#A7A9AC"/>
+                <path id="XMLID 424" d="M141.277 355.757C141.277 355.757 141.619 360.082 143.783 362.928C145.377 368.846 215.086 369.302 216.339 362.358C216.794 359.854 218.845 355.757 218.845 355.757H141.277Z" fill="#939598"/>
+                <path id="XMLID 423" d="M180.118 359.399C201.821 359.399 219.414 357.513 219.414 355.188C219.414 352.862 201.821 350.976 180.118 350.976C158.415 350.976 140.821 352.862 140.821 355.188C140.821 357.513 158.415 359.399 180.118 359.399Z" fill="#3C2415"/>
+                </g>
+                <g id="plant" filter="url(#filter9_d)">
+                <g id="leaf6">
+                <path id="XMLID 435" d="M202.784 343.236C196.52 345.626 195.039 349.383 195.267 353.708H196.52C196.634 349.496 198.912 346.082 203.582 343.578L202.784 343.236Z" fill="#39B54A"/>
+                <path id="XMLID 430" d="M200.62 343.691C200.392 341.984 201.531 340.391 202.67 339.025C205.86 335.155 209.846 331.854 214.516 329.236C215.086 332.082 213.719 334.927 212.352 337.545C211.555 339.139 210.757 340.846 209.163 341.984C208.366 342.667 207.34 343.122 206.315 343.464C204.493 344.147 204.379 345.285 202.329 345.513C202.101 345.057 200.62 344.033 200.734 343.464L200.62 343.691Z" fill="url(#paint11_linear)"/>
+                </g>
+                <g id="leaf4">
+                <path id="XMLID 432" d="M154.831 343.919C155.515 348.017 161.893 350.748 169.411 353.253H170.778C161.779 349.724 155.401 346.196 155.629 342.667L154.831 343.919Z" fill="url(#paint12_linear)"/>
+                <path id="XMLID 429" d="M149.933 345.171C146.174 344.944 143.441 341.529 140.479 339.594C139.454 338.911 138.315 338.228 137.632 337.204C136.948 336.407 136.607 335.382 136.265 334.472C135.695 332.878 135.126 331.285 134.556 329.577C137.518 329.464 140.252 330.602 142.871 331.74C145.719 332.992 148.566 334.13 151.186 335.61C152.895 336.521 154.717 337.545 155.628 339.025C156.654 340.618 156.654 342.553 156.54 344.261C154.262 344.83 152.439 345.513 149.933 345.171Z" fill="url(#paint13_linear)"/>
+                </g>
+                <g id="leaf5">
+                <path id="XMLID 434" d="M202.784 327.073C192.077 333.675 190.824 343.236 191.736 353.48H192.875C192.077 343.236 194.583 334.13 203.695 327.529L202.784 327.073Z" fill="url(#paint14_linear)"/>
+                <path id="XMLID 428" d="M201.19 324.455C201.645 323.659 201.873 321.382 201.987 320.927C202.556 313.528 204.721 310.569 210.643 305.219C210.871 308.975 212.922 312.732 212.466 316.488C212.124 319.447 210.416 322.065 208.593 324.569C207.454 326.163 206.315 327.642 204.607 328.781C204.037 329.236 203.24 329.577 202.556 329.464C201.417 329.35 200.62 328.325 200.506 327.415C200.278 326.39 200.734 325.366 201.19 324.455Z" fill="url(#paint15_linear)"/>
+                </g>
+                <g id="leaf2">
+                <path id="XMLID 448" d="M199.481 299.87C190.483 317.057 192.419 334.699 181.029 353.253H182.851C194.811 334.927 192.533 317.967 200.848 300.78L199.481 299.87Z" fill="url(#paint16_linear)"/>
+                <path id="XMLID 438" d="M203.24 301.235C210.074 291.447 212.922 278.926 211.213 266.975C209.277 267.316 207.682 268.91 206.315 270.276C205.29 271.3 204.379 272.211 203.354 273.235C201.873 274.715 200.279 276.308 199.367 278.129C198.342 280.178 198.001 282.341 197.545 284.617C196.748 289.398 196.178 294.292 196.862 299.073C196.975 299.87 197.203 300.78 197.773 301.463C198.912 303.057 201.532 302.601 203.24 301.235Z" fill="url(#paint17_linear)"/>
+                </g>
+                <g id="leaf1">
+                <path id="XMLID 436" d="M174.195 275.284C154.831 301.008 159.501 326.846 183.876 352.683H186.382C161.437 326.276 158.248 300.325 175.675 274.715L174.195 275.284Z" fill="url(#paint18_linear)"/>
+                <path id="XMLID 427" d="M180.345 276.877C189.913 267.089 194.014 254.568 191.508 242.617C188.774 242.958 186.61 244.552 184.56 245.917C183.193 246.942 181.826 247.852 180.459 248.877C178.295 250.357 176.245 251.95 174.764 253.771C173.283 255.82 172.714 257.983 172.258 260.259C171.233 265.04 170.322 269.934 171.347 274.715C171.575 275.511 171.803 276.422 172.6 277.105C174.195 278.698 177.84 278.243 180.345 276.877Z" fill="url(#paint19_linear)"/>
+                </g>
+                <g id="leaf3">
+                <path id="XMLID 433" d="M176.359 325.138C180.915 333.789 180.232 343.122 175.903 352.797H177.042C182.054 343.236 182.624 334.016 177.498 325.138H176.359Z" fill="url(#paint20_linear)"/>
+                <path id="XMLID 426" d="M179.092 320.927C179.092 319.106 178.181 318.195 178.181 316.488C178.181 314.78 178.181 312.959 177.27 311.366C176.814 310.455 176.017 309.772 175.22 308.975C173.511 307.496 171.575 306.244 169.297 305.333C168.841 308.975 168.613 312.732 168.5 316.488C168.5 317.74 168.5 319.106 168.955 320.244C169.639 321.951 171.233 323.431 172.828 324.797C173.625 325.366 174.422 326.049 175.448 326.39C176.473 326.732 177.953 326.618 178.637 325.935C179.434 325.252 179.092 324.228 178.865 323.431C178.523 322.407 179.434 321.951 179.092 320.927Z" fill="url(#paint21_linear)"/>
+                </g>
+                <g id="leaf3_2">
+                <path id="XMLID 431" d="M149.25 308.52L151.414 307.837C148.339 322.976 169.752 337.204 175.334 353.025L173.853 353.139C165.652 335.496 147.086 322.407 149.25 308.52Z" fill="url(#paint22_linear)"/>
+                <path id="XMLID 425" d="M148.566 310.114C147.541 310.228 146.516 309.772 145.833 309.203C130.684 294.065 137.632 297.707 137.518 291.105C137.518 289.056 137.518 287.008 137.404 284.959C137.176 282.568 140.593 281.203 142.757 282.796C142.985 282.91 143.213 283.138 143.441 283.251C146.061 285.186 148.68 287.235 150.161 289.853C150.845 291.105 151.186 292.471 151.528 293.723C152.781 298.162 154.034 302.715 153.692 307.268C153.578 308.406 152.667 309.317 151.3 309.658C150.389 309.886 149.478 310.114 148.566 310.114Z" fill="url(#paint23_linear)"/>
+                </g>
+                </g>
+                <g id="leaf">
+                <path id="XMLID 391" d="M457.635 167.06C438.727 74.0662 363.893 71.6759 299.082 6C325.735 62.4562 304.663 120.051 349.541 167.06H457.635Z" fill="url(#paint24_linear)"/>
+                <path id="XMLID 421" d="M326.646 203.141C238.372 168.084 249.193 94.099 196 18.862C246.915 55.0577 289.286 34.2281 327.672 86.7005L326.646 203.141Z" fill="url(#paint25_linear)"/>
+                </g>
+                <g id="background" filter="url(#filter10_d)">
+                <path id="XMLID 398" d="M297.438 93.5084V336.179C297.438 363.155 319.307 385.009 346.302 385.009H529.002C556.338 385.009 578.322 362.586 577.866 335.382L573.652 92.7116C573.196 66.077 551.441 44.7921 524.787 44.7921H346.302C319.307 44.6783 297.438 66.5323 297.438 93.5084Z" fill="url(#paint26_linear)"/>
+                <path id="XMLID 399" d="M576.955 232.486H297.438V284.048H576.955V232.486Z" fill="white"/>
+                <path id="XMLID 400" d="M407 84H312V99H407V84Z" fill="#F3E991"/>
+                <path id="XMLID 401" d="M532 117H312V137H532V117Z" fill="#F3E991"/>
+                <path id="XMLID 402" d="M476 156H312V168H476V156Z" fill="#F3E991"/>
+                <path id="XMLID 403" d="M545 184H312V201H545V184Z" fill="#F3E991"/>
+                </g>
+                <g id="man" filter="url(#filter11_d)">
+                <path id="XMLID 404" d="M431.387 234.535L425.122 237.495C425.122 237.495 453.028 359.399 440.955 405.156H492.439C492.439 405.156 494.945 286.325 472.848 242.73L431.387 234.535Z" fill="white"/>
+                <g id="head">
+                <path id="XMLID 405" d="M432.071 205.738C432.071 205.738 428.426 174.892 428.995 171.363C429.565 167.949 425.692 168.176 432.071 156.453C438.449 144.729 469.658 148.144 473.873 149.851C478.201 151.558 487.199 154.973 487.086 169.542C486.972 184.112 485.035 185.591 485.035 185.591C485.035 185.591 458.382 181.152 456.446 176.827C454.509 172.615 432.071 205.738 432.071 205.738Z" fill="black"/>
+                <path id="XMLID 407" d="M433.209 214.047L431.957 234.99L452.231 258.779L466.013 255.023C466.013 255.023 460.432 232.486 462.824 231.917C465.444 231.348 433.209 214.047 433.209 214.047Z" fill="#EDA97A"/>
+                <path id="XMLID 406" d="M442.094 189.234L439.816 184.908C439.816 184.908 430.476 176.941 430.362 193.787C430.362 194.697 430.362 195.608 430.362 196.632C431.273 217.234 438.107 221.787 438.107 221.787C438.107 221.787 447.789 230.324 461.344 231.803C474.898 233.283 480.821 205.169 480.821 205.169C480.821 205.169 486.288 180.811 485.377 179.103C484.466 177.396 455.307 177.396 449.839 173.64C444.372 169.884 444.714 188.209 444.714 188.209L442.094 189.234Z" fill="#EDA97A"/>
+                </g>
+                <path id="XMLID 411" d="M472.62 242.844C472.62 242.844 495.856 328.325 491.983 405.384L572.74 406.408C572.74 406.408 538.797 281.658 517.839 265.837C496.881 249.901 472.62 242.844 472.62 242.844Z" fill="#282869"/>
+                <path id="XMLID 414" d="M425.692 237.267C425.692 237.267 382.978 252.405 379.106 256.617C375.233 260.828 353.591 354.049 353.364 355.643C353.136 357.236 354.958 369.302 460.888 390.131L475.012 367.025C475.012 367.025 403.253 350.066 390.61 341.87C390.61 341.87 387.99 320.244 397.786 311.252C397.786 311.252 410.657 355.188 402.456 406.636H438.449C447.675 372.261 456.445 294.178 425.692 237.267Z" fill="#282869"/>
+                <path id="XMLID 479" d="M511.461 316.033C505.993 287.008 506.677 294.292 506.677 294.292L521.142 316.033H511.461Z" fill="url(#paint27_linear)"/>
+                <path id="XMLID 410" d="M449.042 249.674H460.888L470.114 252.064L469.317 264.584H446.422L442.436 252.064L449.042 249.674Z" fill="white"/>
+                <path id="XMLID 413" d="M473.987 369.529C473.987 369.529 480.479 372.375 483.555 372.261C486.63 372.147 491.756 367.367 496.426 368.846C501.096 370.326 485.947 393.318 485.947 393.318C485.947 393.318 466.241 391.839 459.635 385.465C453.029 379.09 473.987 369.529 473.987 369.529Z" fill="#EDA97A"/>
+                <path id="XMLID 412" d="M451.776 249.446C451.776 249.446 453.598 248.649 455.307 248.763C457.015 248.877 455.99 255.479 455.99 255.479H454.623C454.623 255.479 452.345 253.316 451.776 249.446Z" fill="#E5414D"/>
+                <path id="XMLID 415" d="M454.623 255.479C454.623 255.479 452.117 319.106 458.04 340.618L464.988 347.22L470.456 339.139C470.456 339.139 464.305 263.902 456.104 255.479H454.623Z" fill="#E5414D"/>
+                <path id="XMLID 408" d="M432.868 232.486C432.868 232.486 451.776 247.056 451.776 249.332L446.08 258.779L429.451 233.625L432.868 232.486Z" fill="white"/>
+                <path id="XMLID 409" d="M455.193 248.763L463.28 238.519L466.697 241.023L464.988 257.641L455.193 248.763Z" fill="white"/>
+                </g>
+                <g id="laptop">
+                <path id="XMLID 416" d="M503.032 316.032L475.126 403.448L597.116 404.473L623.883 316.032H507.702H503.032Z" fill="#E5414D"/>
+                <path id="XMLID 418" d="M476.151 400.148H451.776L475.126 403.449L476.151 400.148Z" fill="#999999"/>
+                <path id="XMLID 419" d="M451.776 400.148V401.741L475.467 405.042L597.229 405.725L597.116 404.473L475.809 402.993L451.776 400.148Z" fill="#423F3F"/>
+                <path id="XMLID 420" d="M475.809 402.993L597.115 404.473L623.883 316.032L475.809 402.993Z" fill="#C94457"/>
+                </g>
+                <g id="Desk" filter="url(#filter12_d)">
+                <path id="Rectangle 1" d="M26.77 405.837H387.936V418.82H13L26.77 405.837Z" fill="url(#paint28_linear)"/>
+                <path id="Rectangle 2" d="M387.936 405.443H749.103L787.658 420H387.936V405.443Z" fill="url(#paint29_linear)"/>
+                </g>
+                </g>
+                <defs>
+                <filter id="filter0_d" x="604.597" y="176.988" width="346.375" height="176.673" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter1_di" x="782" y="198" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="5"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect2_innerShadow"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="2.5"/>
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0"/>
+                <feBlend mode="normal" in2="shape" result="effect2_innerShadow"/>
+                </filter>
+                <filter id="filter2_di" x="597" y="201" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="5"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.7 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect2_innerShadow"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="2.5"/>
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.8 0"/>
+                <feBlend mode="normal" in2="shape" result="effect2_innerShadow"/>
+                </filter>
+                <filter id="filter3_d" x="692.039" y="172.682" width="93.8673" height="96.5134" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter4_d" x="604.698" y="241.096" width="107.118" height="91.669" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter5_d" x="605.553" y="139.221" width="90.4359" height="68.7292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter6_d" x="703.054" y="73.538" width="55.7397" height="76.7132" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter7_d" x="756.691" y="55.4404" width="124.086" height="130.567" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter8_d" x="802.281" y="181.337" width="114.71" height="111.329" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter9_d" x="121.556" y="239.617" width="100.092" height="131.091" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter10_d" x="284.438" y="41.7917" width="300.436" height="360.217" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter11_d" x="340.351" y="145.04" width="239.389" height="278.595" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <filter id="filter12_d" x="0" y="402.443" width="794.658" height="34.5568" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-3" dy="7"/>
+                <feGaussianBlur stdDeviation="5"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                </filter>
+                <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(804 212) rotate(90.2301) scale(9.00007)">
+                <stop stop-color="#D77DED"/>
+                <stop offset="1" stop-color="#4F0CBD"/>
+                </radialGradient>
+                <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(619 215) rotate(90.2301) scale(9.00007)">
+                <stop stop-color="#D77DED"/>
+                <stop offset="1" stop-color="#4F0CBD"/>
+                </radialGradient>
+                <linearGradient id="paint2_linear" x1="750.665" y1="192.993" x2="775.307" y2="202.411" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint3_linear" x1="705.039" y1="217.095" x2="762.933" y2="244.467" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint4_linear" x1="617.698" y1="279.93" x2="683.477" y2="317.396" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint5_linear" x1="618.553" y1="166.585" x2="666.84" y2="199.289" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint6_linear" x1="716.054" y1="104.895" x2="748.928" y2="114.601" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint7_linear" x1="769.691" y1="113.724" x2="856.824" y2="152.157" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint8_linear" x1="861.29" y1="243.079" x2="880.89" y2="265.207" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint9_linear" x1="878.498" y1="256.688" x2="897.247" y2="274.206" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint10_linear" x1="822.532" y1="213.807" x2="865.305" y2="248.375" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                <linearGradient id="paint11_linear" x1="187.894" y1="237.201" x2="210.495" y2="351.352" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint12_linear" x1="140.667" y1="236.739" x2="164.999" y2="359.637" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint13_linear" x1="126.577" y1="239.86" x2="150.8" y2="362.204" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint14_linear" x1="177.243" y1="237.206" x2="200.217" y2="353.244" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint15_linear" x1="189.34" y1="234.577" x2="212.38" y2="350.95" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint16_linear" x1="173.221" y1="237.267" x2="196.262" y2="353.64" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint17_linear" x1="194.098" y1="233.17" x2="217.152" y2="349.61" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint18_linear" x1="158.021" y1="238.355" x2="181.462" y2="356.755" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint19_linear" x1="176.817" y1="235.566" x2="199.776" y2="351.525" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint20_linear" x1="157.562" y1="238.581" x2="180.909" y2="356.505" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint21_linear" x1="157.763" y1="237.423" x2="181.406" y2="356.84" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint22_linear" x1="143.711" y1="239.229" x2="167.46" y2="359.182" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint23_linear" x1="133.263" y1="241.582" x2="156.893" y2="360.934" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#39B54A"/>
+                <stop offset="1" stop-color="#006838"/>
+                </linearGradient>
+                <linearGradient id="paint24_linear" x1="284.542" y1="18.9801" x2="434.646" y2="187.508" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00AEEF"/>
+                <stop offset="1" stop-color="#2B3990"/>
+                </linearGradient>
+                <linearGradient id="paint25_linear" x1="200.822" y1="14.4496" x2="350.173" y2="182.132" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00AEEF"/>
+                <stop offset="1" stop-color="#2B3990"/>
+                </linearGradient>
+                <linearGradient id="paint26_linear" x1="325.934" y1="371.759" x2="599.59" y2="-13.1599" gradientUnits="userSpaceOnUse">
+                <stop offset="3.94624e-07" stop-color="#F15A29"/>
+                <stop offset="1" stop-color="#FBB040"/>
+                </linearGradient>
+                <linearGradient id="paint27_linear" x1="505.504" y1="300.721" x2="521.058" y2="318.184" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#262262"/>
+                <stop offset="1" stop-color="#2B3990"/>
+                </linearGradient>
+                <linearGradient id="paint28_linear" x1="25.9831" y1="406.23" x2="27.3016" y2="384.412" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FBB040"/>
+                <stop offset="1" stop-color="#F15A29"/>
+                </linearGradient>
+                <linearGradient id="paint29_linear" x1="387.936" y1="412.722" x2="390.336" y2="443.602" gradientUnits="userSpaceOnUse">
+                <stop offset="0.0395832" stop-color="#8251D1"/>
+                <stop offset="1" stop-color="#CF4DEF" stop-opacity="0.94"/>
+                </linearGradient>
+                </defs>
+                </svg>                 
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Header area end  -->
+      <!-- Header area 2  -->
+      <div class="header2">
+        <div class="row1">
+          <div class="col-md-6">
+            <div class="contents">
+              <h2 class="heading2">Me as a Designer</h2>
+              <div class="heading2-wrapper">
+                <p class="header2details">Focusing my career as UI/UX Designer along with improving my skills in photoshop and illustrator. <br>Entering the new world of blender and Krita for animation and digital art I hope to further enhance my skills in all the fields while keeping UI/UX Designing as my end goal.</p>
+              </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="buttons">
+                <button class="buttondesigns"  onclick="window.location.href='figma.html'">UI/UX Designs</button>
+              <button class="buttondesigns" onclick="window.location.href='illustrator.html'">Graphic Designs</button>
+              <!-- <button class="buttondesigns" onclick="window.location.href='nanny.html'">Web Development</button> -->
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="man">
+              <svg class="myman" width="400" height="300" viewBox="0 0 445 329" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="man">
+                  <path id="XMLID-18" d="M116.133 264.276C115.265 264.379 115.851 259.182 113.138 258.707C109.158 257.96 94.479 258.765 92.2239 259.015C90.5736 259.227 76.0113 260.73 71.2866 264.995C66.5619 269.26 40.6572 279.314 40.6572 279.314C37.1312 280.408 35.758 282.534 37.7059 283.979C41.1096 286.572 50.8313 290.786 52.5398 290.922C58.0786 291.536 58.7788 290.303 67.358 287.291C67.358 287.291 78.5989 284.32 83.0003 287.336C87.3096 290.431 116.133 264.276 116.133 264.276Z" fill="black"/>
+                  <path id="XMLID-17" d="M63.9102 268.463C63.9102 268.463 37.6371 289.596 20.494 290.044C20.494 290.044 8.25025 290.501 5.71587 288.865C3.09607 287.222 -2.1632 293.876 5.08661 296.749C12.3288 299.717 38.3124 301.599 47.0291 300.096C47.0291 300.096 66.7637 302.723 68.5894 299.236C70.4151 295.749 85.7784 270.208 85.7784 270.208L63.9102 268.463Z" fill="black"/>
+                  <path id="XMLID-12" d="M246.485 212.647C246.485 212.647 188.293 125.303 172.882 120.204C157.471 115.106 74.8948 257.67 56.8033 261.384C56.8033 261.384 67.7878 275.837 83.4282 283.447C83.4282 283.447 169.592 176.508 171.019 169.4C172.36 162.286 220.707 242.655 230.547 256.163L246.485 212.647Z" fill="#420E97"/>
+                  <path id="XMLID-16" d="M239.128 249.97C239.128 249.97 115.232 262.779 93.0449 262.38C77.0979 262.093 73.2489 301.704 98.149 300.796C115.796 300.165 216.022 306.422 231.926 303.467C247.83 300.512 289.339 305.555 285.5 288C276.316 246 239.128 249.97 239.128 249.97Z" fill="#420E97"/>
+                  <path id="XMLID-14" d="M235.503 232.832C235.503 232.832 232.206 234.288 231.975 237.193C231.743 240.097 235.431 285.438 288.594 283.921L288.676 266.734L235.503 232.832Z" fill="white"/>
+                  <g id="face">
+                  <path id="XMLID-7" d="M269.071 73.9798L273.431 89.3719C273.431 89.3719 300.675 79.7688 302.3 74.4827L292.077 57.1612L269.071 73.9798Z" fill="#EDA97A"/>
+                  <path id="XMLID-5" d="M259.088 27.7926C259.088 27.7926 253.672 25.641 254.962 18.093C254.962 18.093 257.273 21.4581 259.62 21.1297C259.62 21.1297 255.837 17.9049 257.865 11.8772C257.865 11.8772 258.495 14.7643 261.765 15.799C261.765 15.799 261.152 11.6237 262.099 11.6133C262.099 11.6133 263.138 13.6734 264.768 13.7176C264.768 13.7176 266.862 12.2513 266.944 11.2263C266.944 11.2263 268.143 12.3536 270.105 11.4785C270.105 11.4785 277.864 7.97136 281.79 9.40229C281.79 9.40229 285.299 9.59639 285.268 6.75699C285.268 6.75699 286.539 5.91279 288.842 9.36338C288.842 9.36338 291.005 7.04293 289.853 5.31763C289.853 5.31763 293.56 7.33288 293.141 9.36257C293.141 9.36257 294.845 6.31784 294.069 4.1927C294.004 3.92962 293.768 3.65289 293.618 3.38299C291.882 1.43913 300.845 6.5388 301.864 13.1536C301.864 13.1536 306.142 11.2599 305.499 8.54362C305.499 8.54362 308.766 10.6956 309.03 17.0782C309.03 17.0782 313.028 16.5376 313.014 14.5593C313.014 14.5593 315.014 18.5874 314.047 21.0033C314.047 21.0033 319.49 22.8132 319.16 25.8816C319.16 25.8816 315.045 23.576 316.221 26.0769C316.221 26.0769 322.773 35.5403 317.346 48.604C317.346 48.604 314.795 53.6443 315.543 56.1111C315.543 56.1111 313.914 56.067 313.558 54.0614C313.558 54.0614 312.78 59.5012 313.361 60.8371C313.361 60.8371 311.573 58.4593 309.995 58.8491C309.995 58.8491 309.244 63.9472 310.611 66.2054C310.611 66.2054 310.109 64.9618 307.266 63.9612C307.266 63.9612 308.859 67.6989 308.272 70.7469C308.272 70.7469 307.516 68.3655 305.039 68.1678C305.039 68.1678 302.648 74.4245 304.286 78.6816L302.167 77.223L301.996 79.3585C301.996 79.3585 297.499 75.389 295.247 72.3723C295.247 72.3723 292.736 76.9001 293.711 78.6972C293.711 78.6972 289.428 73.1115 289.604 64.4429C289.604 64.4429 286.958 54.5174 288.757 45.9784C288.757 45.9784 289.662 42.1821 281.706 34.154C273.75 26.1259 277.633 19.4725 277.633 19.4725C277.633 19.4725 273.685 25.8628 271.047 26.5979C268.502 27.2544 259.649 29.3848 259.088 27.7926Z" fill="#3C2415"/>
+                  <path id="XMLID-4" d="M293.497 45.841C293.497 45.841 302.855 41.6877 297.752 56.0668C297.752 56.0668 290.476 65.3723 287.489 59.7179L287.107 64.5016C287.107 64.5016 280.04 76.5747 262.856 75.3752C262.856 75.3752 258.319 76.2165 259.684 67.7288C259.684 67.7288 258.977 66.8987 258.553 65.7473C257.404 62.9047 262.031 63.102 263.004 62.7499C263.004 62.7499 255.094 61.6887 259.026 58.7358C259.026 58.7358 260.752 57.584 259.692 55.7801C259.692 55.7801 255.858 54.2706 255.011 54.117C253.999 53.8643 251.467 52.2008 253.582 50.4783C256.619 47.9698 259.137 45.5057 259.04 42.4033C258.944 39.3008 257.129 32.9663 259.981 28.4657C259.981 28.4657 274.793 29.2181 277.713 19.5649C277.713 19.5649 274.372 24.8002 281.805 33.9901C281.805 33.9901 288.869 41.3453 288.857 45.8145C288.863 45.7291 291.01 48.9952 293.497 45.841Z" fill="#EDA97A"/>
+                  </g>
+                  <path id="XMLID-8" d="M303.127 74.8926C303.127 74.8926 309.183 83.0269 310.752 85.9891C310.981 86.3512 311.046 86.6143 311.118 86.7919C311.422 88.3636 281.268 102.119 281.268 102.119L253.258 149.314C253.258 149.314 254.534 135.489 256.604 133.247C258.667 131.091 276.436 100.186 274.172 91.9242C271.902 83.7481 278.141 83.1285 278.141 83.1285L303.127 74.8926Z" fill="white"/>
+                  <path id="XMLID-9" d="M257.615 94.7291C257.615 94.7291 177.436 101.913 178.931 107.964C178.931 107.964 172.239 117.488 180.62 133.115C189.001 148.742 199.951 162.339 199.951 162.339C199.951 162.339 202.241 165.96 200.232 167.433C198.223 168.906 196.061 171.227 201.138 186.246C201.138 186.246 202.53 191.43 200.508 197.372C200.508 197.372 202.413 190.733 201.009 190.019C199.604 189.305 198.743 187.173 198.078 194.427C197.413 201.681 200.349 204.752 201.554 201.496C201.554 201.496 202.69 208.808 206.633 206.801C206.633 206.801 208.51 212.367 212.021 207.145C212.021 207.145 214.692 201.685 214.692 199.535C214.691 197.386 214.816 206.595 215.008 208.501C215.199 210.408 220.66 210.93 220.683 207.407C220.621 203.877 224.47 197.651 220.419 187.012C216.368 176.372 216.497 172.6 216.497 172.6C216.497 172.6 216.302 167.512 213.599 165.835C213.599 165.835 206.527 154.267 204.187 138.348C204.187 138.348 200.707 128.099 201.208 125.044C201.208 125.044 209.132 125.934 223.654 124.944C223.654 124.944 260.507 119.89 262.373 120.211C264.252 120.361 257.615 94.7291 257.615 94.7291Z" fill="#EDA97A"/>
+                  <path id="XMLID-6" d="M273.115 84.7046L269.347 87.7566L269.136 90.4047L255.937 93.1338C255.937 93.1338 263.296 123.724 261.363 128.555C259.344 133.38 281.902 94.1745 281.902 94.1745L273.115 84.7046Z" fill="white"/>
+                  <path id="XMLID-13" d="M308.576 86.3312C308.576 86.3312 320.615 95.9747 321.738 107.756C322.861 119.537 324.109 142.676 322.36 165.661C322.36 165.661 301.305 196.82 300.588 219.802C299.878 242.698 297.15 270.42 289.534 272.133C289.534 272.133 248.821 284.615 232.383 232.067C232.383 232.067 243.823 212.606 245.161 206.609C246.499 200.613 251.653 152.195 253.252 149.4C254.936 146.611 259.741 132.724 259.741 132.724L285.851 92.0826L308.576 86.3312Z" fill="#F15A29"/>
+                  <path id="XMLID-15" d="M115.604 270.131L118.514 261.856C118.514 261.856 99.9769 263.822 97.5542 265.998C95.1315 268.174 92.6322 272.282 92.6322 272.282L115.604 270.131Z" fill="#420E97"/>
+                  <path id="XMLID-11" d="M299.911 142.12C299.911 142.12 319.231 182.261 320.995 190.31C322.767 198.275 333.936 233.897 341.801 248.451C349.666 263.005 359.973 290.048 361.057 294.777C362.141 299.505 363.221 301.053 366.758 303.055C370.295 305.056 379.35 307.928 383.44 307.309C383.44 307.309 391.831 307.721 394.685 309.668C397.774 311.892 403.046 311.539 403.265 310.954C403.49 310.285 403.955 308.774 398.539 306.623C391.711 303.843 391.548 305.893 388.034 302.518C384.436 299.136 404.405 303.136 404.405 303.136C404.405 303.136 418.254 307.337 422.894 309.512C430.764 313.235 432.062 309.9 430.507 308.916C425.836 306.05 418.598 304.097 414.706 302.239C411.234 300.501 425.029 305.384 425.029 305.384C422.322 300.526 390.178 292.889 374.474 291.463C374.474 291.463 367.494 291.68 366.401 276.29C365.188 259.172 355.841 213.638 348.964 202.859C342.173 192.087 341.936 164.902 340.329 161.335C338.722 157.768 336.556 136.448 331.085 132.83L299.911 142.12Z" fill="#EDA97A"/>
+                  <path id="XMLID-10" d="M298.165 145.677C298.165 145.677 299.126 145.496 300.619 145.099C307.722 143.345 327.986 138.257 333.254 134.723C333.254 134.723 326.743 106.436 321.911 102.354C317.079 98.2714 294.165 94.5514 290.844 111.394C287.522 128.236 298.165 145.677 298.165 145.677Z" fill="white"/>
+                  </g>
+                </svg>     
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header area 2 end  -->
+      <hr>
+      <!-- Skills area  -->
+      <div class="skills">
+        <div class="skillheading">
+          <h2 class="skillheading2">Skills</h2>
+        </div>
+        <div class="row1">
+          <div class="col-md-4">
+              <img src="images/skills/UI.png" class="skillimage" alt="image1">
+              <img src="images/skills/UI-shadow.png" class="skillshadow" alt="image1">
+              <h3 class="skillheaderdetails">UI/UX Designer</h3>                      
+              <p class="skilldetails">Can make UI/UX design and can adapt to the changes in web desings/mobile designs. </p>
+            </div>
+          <div class="col-md-4">
+            <img src="images/skills/Web-Development.png" class="skillimage" alt="image2">
+            <img src="images/skills/UI-shadow.png" class="skillshadow" alt="image2">
+            <h3 class="skillheaderdetails">Web Development</h3>
+            <p class="skilldetails">Good grasp on the web development including both frontend and backend programming.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/skills/Graphic-Designer.png" class="skillimage" alt="image3">
+            <img src="images/skills/UI-shadow.png" class="skillshadow" alt="image3">
+            <h3 class="skillheaderdetails">Graphic Designer</h3>
+            <p class="skilldetails">Using the basic tools such as photoshop and illustator I can perform well in graphic designs.</p>
+          </div>
+        </div>
+        <div class="row1">
+          <div class="col-md-4">
+              <img src="images/skills/Digital-Art.png" class="skillimage" alt="image4"> 
+              <img src="images/skills/UI-shadow.png" class="skillshadow" alt="image4">
+              <h3 class="skillheaderdetails">Digital Art</h3>                    
+              <p class="skilldetails">Hobby and skill of drawing and painting both on digital platform and on sketch book</p>
+            </div>
+          <div class="col-md-4">
+            <img src="images/skills/3D-modelling.png" class="skillimage" alt="image5">
+            <img src="images/skills/UI-shadow.png" class="skillshadow" alt="image5">
+            <h3 class="skillheaderdetails">3D-Modelling</h3>
+            <p class="skilldetails">Entering the new world of 3D modeling, sculpting and animation through the help of blender</p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/skills/Logo-Design.png" class="skillimage" alt="image6">
+            <img src="images/skills/UI-shadow.png" class="skillshadow" alt="image6">
+            <h3 class="skillheaderdetails">Logo Design</h3>
+            <p class="skilldetails">Have concepts and ideas regarding logo designs.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skills area end  -->
+      <hr>
+      <!-- Recent Works Area  -->
+      <div class="recentworks">
+        <div class="recentheading">
+          <h2 class="recentheading2">Recent Works</h2>
+        </div>
+        <div class="allworks" id="container">
+          <div class="row1">
+            <div class="col-md-4">
+              <img src="images/recent-works/mayawork.png" class="recentimage" alt="recentimage1" onclick="window.location.href='nanny.html'">
+            </div>
+            <div class="col-md-4">
+              <img src="images/recent-works/sajilo.png" class="recentimage" alt="recentimage2" onclick="window.location.href='sajiloparking.html'">
+            </div>
+            <div class="col-md-4">
+              <img src="images/recent-works/homestay.png" class="recentimage" alt="recentimage4" onclick="window.location.href='homestayproject.html'">
+            </div>
+            <div class="col-md-4">
+              <img src="images/recent-works/ghimire.png" class="recentimage" alt="recentimage3">
+            </div>
+          </div>
+        </div>
+        <button type="button" class="back" id="slideBack"><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-5.47875e-06 8.91531C-5.47494e-06 9.23487 0.12201 9.55439 0.365527 9.79803L8.03236 17.4648C8.52007 17.9525 9.3108 17.9525 9.79831 17.4648C10.2858 16.9773 10.2858 16.1867 9.79831 15.699L3.01427 8.91531L9.79807 2.13163C10.2856 1.64392 10.2856 0.853426 9.79807 0.365957C9.31056 -0.121985 8.51983 -0.121985 8.03213 0.365957L0.36529 8.0326C0.121733 8.27635 -5.48256e-06 8.59587 -5.47875e-06 8.91531Z" fill="#8251D1"/>
+          </svg></button>
+        <button type="button" class="side" id="slide"><svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.1639 8.91531C10.1639 9.23487 10.0419 9.55439 9.79841 9.79803L2.13158 17.4648C1.64387 17.9525 0.85314 17.9525 0.365631 17.4648C-0.121877 16.9773 -0.121877 16.1867 0.365631 15.699L7.14967 8.91531L0.365869 2.13163C-0.12164 1.64392 -0.12164 0.853426 0.365869 0.365957C0.853377 -0.121986 1.64411 -0.121986 2.13181 0.365957L9.79865 8.0326C10.0422 8.27635 10.1639 8.59587 10.1639 8.91531Z" fill="#8251D1"/>
+          </svg>
+          </button>
+          <script>
+            var button = document.getElementById('slide');
+            button.onclick = function () {
+                var container = document.getElementById('container');
+                sideScroll(container,'right',300,300,300);
+            };
+
+            var back = document.getElementById('slideBack');
+            back.onclick = function () {
+                var container = document.getElementById('container');
+                sideScroll(container,'left',300,300,300);
+            };
+
+            function sideScroll(element,direction,speed,distance,step){
+                scrollAmount = 0;
+                var slideTimer = setInterval(function(){
+                    if(direction == 'left'){
+                        element.scrollLeft -= step;
+                    } else {
+                        element.scrollLeft += step;
+                    }
+                    scrollAmount += step;
+                    if(scrollAmount >= distance){
+                        window.clearInterval(slideTimer);
+                    }
+                }, speed);
+            }
+          </script>
+      <!-- Recent Works Area end  -->
+      <hr>
+      <!-- Projects area  -->
+      <div class="recentworks">
+        <div class="projectheading">
+          <h2 class="projectheading2">Projects</h2>
+          <div class="project1">
+            <div class="row2">
+              <div class="col-md-6">
+                <div class="contents">
+                  <h2 class="projectname1">Maya's Placement Services</h2>
+                    <p class="projectdetails">Maya's placement services is a website which
+                                              acts as an agent between Nannies and
+                                              Customers. The customers are able to contact
+                                              nannies to take care of their children through
+                                              this website and also nannies are able to find 
+                                              a job through here. Agent is able to write blogs
+                                              as their desire and promote nannies status
+                                              based on their work performance.</p>
+                      <div class="mayabutton">
+                        <button class="project1button" onclick="window.location.href='nanny.html'">More Info</button>
+                      </div>
+                      <div class="owner">
+                        <h2 class="owner1">Maya Regmi</h2>
+                        <h2 class="owner11">Sanfransisco, Calafornia</h2>
+                      </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="images/projects/project-1.png" class="projectimage" alt="projectimage1">
+              </div>
+          </div>
+          <div class="row2">
+            <div class="col-md-6">
+              <img src="images/projects/project-2.png" class="projectimage" alt="projectimage2">
+            </div>
+            <div class="col-md-6">
+              <div class="contents">
+                <h2 class="projectname2">Homestay</h2>
+                  <p class="projectdetails">Homestay is a mobile application that provides a way for people to rent a vehicle when required easily for affordable and reasonable price. This online vehicle system is created with the idea of letting people who own vehicle but are not going to use them for a while. So now they can put their vehicle up for rent and rent it out to another person who wants to rent the vehicle.</p>
+                    <div class="mayabutton">
+                      <button class="project2button" onclick="window.location.href='homestayproject.html'">More Info</button>
+                    </div>
+                    <div class="owner">
+                      <h2 class="owner2">Pradeep Dahal</h2>
+                      <h2 class="owner22">Dhapakhel, Lalitpur</h2>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div class="row2">
+          <div class="col-md-6">
+            <div class="contents">
+              <h2 class="projectname3">Sajilo Parking</h2>
+                <p class="projectdetails">Sajilo Parking is an android application that can be used by anyone to see the available parking areas and to record the expense incurred after parking. User can log in to the system and can see the available parking areas and can record their expenses as well.</p>
+                  <div class="mayabutton">
+                    <button class="project3button" onclick="window.location.href='sajiloparking.html'">More Info</button>
+                  </div>
+                  <div class="owner">
+                    <h2 class="owner3">Sushil Poudel</h2>
+                    <h2 class="owner33">Kalanki, Kathmandu</h2>
+                  </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="images/projects/project-3.png" class="projectimage" alt="projectimage3">
+          </div>
+      </div>
+        </div>
+      </div>
+      <!-- Projects area end  -->
+      <!-- Footer area  -->
+      <div class="footer">
+        <div class="footer-inner">
+          <div class="icons">
+            <ul>
+              <p class="get-connected">Get Connected with me on social networks</p>
+                <li><a href="https://www.facebook.com/sagar.ghimire.9828456/">
+                  <svg class="myicon" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="facebook" d="M32.1442 16.1699C32.1442 7.23733 24.9506 0 16.0721 0C7.19355 0 0 7.23733 0 16.1699C0 24.2418 5.87797 30.9314 13.5641 32.1442V20.8448H9.48123V16.1699H13.5641V12.6099C13.5641 8.56091 15.9619 6.31799 19.6364 6.31799C21.3927 6.31799 23.2332 6.63095 23.2332 6.63095V10.6082H21.2048C19.2087 10.6082 18.5866 11.8536 18.5866 13.1315V16.1634H23.0453L22.3324 20.8383H18.5866V32.1376C26.2662 30.9314 32.1442 24.2418 32.1442 16.1699Z" fill="white"/>
+                  </svg>
+                    </a>
+                </li>
+              
+                <li><a href="https://www.facebook.com/sagar.ghimire.9828456/">
+                  <svg class="myicon" width="33" height="33" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="messenger" d="M16.0323 0C7 0 0 6.60115 0 15.5253C0 20.1906 1.91613 24.2236 5.03871 27.0047C5.57419 27.4887 5.46452 27.7726 5.55484 30.7602C5.58065 31.47 6.17419 32.0249 6.88387 31.9991C7.04516 31.9927 7.20645 31.9604 7.35484 31.8894C10.7677 30.386 10.8129 30.2698 11.3935 30.4247C21.2839 33.1477 32 26.8176 32 15.5188C32 6.60115 25.071 0 16.0323 0ZM25.6645 11.944L20.9548 19.4034C20.2387 20.5262 18.7548 20.8617 17.6258 20.1455C17.5742 20.1132 17.5226 20.0809 17.4774 20.0422L13.729 17.2353C13.3871 16.9772 12.9097 16.9772 12.5677 17.2353L7.50968 21.0682C6.83226 21.578 5.94839 20.7714 6.40645 20.0551L11.1161 12.5957C11.8258 11.473 13.3161 11.1374 14.4452 11.8472C14.4968 11.8795 14.5484 11.9182 14.6 11.9505L18.3484 14.7574C18.6903 15.0155 19.1677 15.0155 19.5097 14.7574L24.5677 10.9245C25.2323 10.4212 26.1161 11.2278 25.6645 11.944Z" fill="white"/>
+                  </svg>   
+                    </a>
+                </li>
+              
+                <li><a href="https://www.instagram.com/sagar.ghimire001/">
+                  <svg class="myicon" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="instagram" d="M16.0757 7.83072C11.5149 7.83072 7.83615 11.5103 7.83615 16.0721C7.83615 20.6339 11.5149 24.3134 16.0757 24.3134C20.6364 24.3134 24.3152 20.6339 24.3152 16.0721C24.3152 11.5103 20.6364 7.83072 16.0757 7.83072ZM16.0757 21.43C13.1284 21.43 10.7189 19.0272 10.7189 16.0721C10.7189 13.117 13.1212 10.7141 16.0757 10.7141C19.0301 10.7141 21.4324 13.117 21.4324 16.0721C21.4324 19.0272 19.023 21.43 16.0757 21.43ZM26.5741 7.49361C26.5741 8.56233 25.7135 9.41587 24.6522 9.41587C23.5837 9.41587 22.7304 8.55516 22.7304 7.49361C22.7304 6.43206 23.5909 5.57134 24.6522 5.57134C25.7135 5.57134 26.5741 6.43206 26.5741 7.49361ZM32.0312 9.44456C31.9093 6.86959 31.3213 4.58869 29.4353 2.70946C27.5565 0.830232 25.2761 0.242076 22.7017 0.112969C20.0484 -0.0376563 12.0957 -0.0376563 9.44246 0.112969C6.87523 0.234904 4.59484 0.823059 2.70886 2.70229C0.822876 4.58152 0.242022 6.86242 0.112944 9.43739C-0.0376479 12.0913 -0.0376479 20.0457 0.112944 22.6996C0.234851 25.2746 0.822876 27.5555 2.70886 29.4347C4.59484 31.3139 6.86806 31.9021 9.44246 32.0312C12.0957 32.1818 20.0484 32.1818 22.7017 32.0312C25.2761 31.9093 27.5565 31.3211 29.4353 29.4347C31.3141 27.5555 31.9021 25.2746 32.0312 22.6996C32.1818 20.0457 32.1818 12.0984 32.0312 9.44456ZM28.6035 25.5471C28.0441 26.953 26.9613 28.036 25.5486 28.6027C23.4331 29.4419 18.4134 29.2482 16.0757 29.2482C13.7379 29.2482 8.71101 29.4347 6.60273 28.6027C5.19721 28.0432 4.11438 26.9601 3.54787 25.5471C2.70886 23.4312 2.90248 18.4104 2.90248 16.0721C2.90248 13.7338 2.71603 8.70578 3.54787 6.59703C4.10721 5.19119 5.19003 4.10812 6.60273 3.54149C8.71818 2.70229 13.7379 2.89595 16.0757 2.89595C18.4134 2.89595 23.4403 2.70946 25.5486 3.54149C26.9541 4.10095 28.0369 5.18402 28.6035 6.59703C29.4425 8.71296 29.2489 13.7338 29.2489 16.0721C29.2489 18.4104 29.4425 23.4384 28.6035 25.5471Z" fill="white"/>
+                  </svg>
+                    </a>
+                </li>
+              
+                <li><a href="https://www.behance.net/sagarghimire1">
+                  <svg class="myicon" width="52" height="33" viewBox="0 0 52 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="behance" d="M20.6651 14.4137C23.5041 13.0624 24.9783 11.015 24.9783 7.82106C24.9783 1.52872 20.2965 0 14.8778 0H0V31.5709H15.3009C21.0336 31.5709 26.4251 28.8137 26.4251 22.3985C26.4387 18.4402 24.5551 15.5056 20.6651 14.4137ZM6.9475 5.37783H13.4582C15.9561 5.37783 18.2218 6.0876 18.2218 8.98125C18.2218 11.6565 16.4611 12.7348 13.9906 12.7348H6.9475C6.9475 12.7485 6.9475 5.37783 6.9475 5.37783ZM14.3591 26.2067H6.93386V17.5121H14.4956C17.553 17.5121 19.4912 18.7815 19.4912 22.0164C19.4912 25.2103 17.1845 26.2067 14.3591 26.2067ZM46.2985 4.76361H33.4954V1.65156H46.2985V4.76361ZM51.3214 20.4603C51.3214 13.7039 47.3631 8.0531 40.1973 8.0531C33.2361 8.0531 28.4998 13.2944 28.4998 20.1464C28.4998 27.2713 32.9768 32.1442 40.1973 32.1442C45.657 32.1442 49.1922 29.6873 50.8983 24.4596H45.3567C44.7561 26.4114 42.2992 27.4488 40.3883 27.4488C36.703 27.4488 34.7785 25.2922 34.7785 21.6342H51.2669C51.2942 21.2656 51.3214 20.8698 51.3214 20.4603ZM34.7785 17.6895C34.9832 14.6867 36.976 12.8031 39.9925 12.8031C43.1455 12.8031 44.7288 14.6594 45.0018 17.6895H34.7785Z" fill="white"/>
+                  </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr class="line">
+          <div class="footer-below">
+            <div class="row1">
+              <div class="col-md-1">
+                <div class="logo1">
+                  <img src="images/sagar-logo.png" class="logo1" alt="mylogo">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="sociallinks">
+                <a href="home.html" class="links">Home</a>
+                <a href="designs.html" class="links">Designs</a>
+                <a href="about.html" class="links">About Me</a>
+                <a href="contact.html" class="links">Contact</a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="copyright">
+                  <p class="footer-details1">If you think I used template, Inspect it</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="copyright">
+                  <p class="footer-details2">Copyright &#169; 2021 By Sagar Ghimire</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer area end  -->
+      </body>
+      </html>

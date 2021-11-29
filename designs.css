@@ -1,0 +1,111 @@
+/* Gallery Area css */
+.row{
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+.thistitle{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  color: #EB5757;
+}
+    .backarrow{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: inline-block;
+        margin-left: 5%;
+      cursor: pointer; }
+    .note{
+        font-size: 2.5vmin;
+        text-align: justify;
+        color: #EB5757;
+    }
+  .gallery_f_inner {
+    margin-bottom: -45px; }
+  
+  .h_gallery_item {
+    display: inline-block;
+    margin-bottom: 45px; }
+    .h_gallery_item .g_img_item {
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+      border-radius: 5px; }
+      .h_gallery_item .g_img_item:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        background-image: -moz-linear-gradient(115.11deg, #8251D1 18.65%, rgba(207, 77, 239, 0.94) 84.05%);
+        background-image: -webkit-linear-gradient(115.11deg, #8251D1 18.65%, rgba(207, 77, 239, 0.94) 84.05%);
+        background-image: -ms-linear-gradient(115.11deg, #8251D1 18.65%, rgba(207, 77, 239, 0.94) 84.05%);
+        position: absolute;
+        opacity: 0;
+        transition: all 300ms ease; }
+      .h_gallery_item .g_img_item .light {
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        opacity: 0; }
+    .h_gallery_item .g_item_text {
+      text-align: center; }
+      .h_gallery_item .g_item_text h4 {
+        color: #222222;
+        font-size: 21px;
+        margin-top: 22px;
+        transition: all 300ms linear 0s; }
+      .h_gallery_item .g_item_text p {
+        margin-bottom: 0px; }
+    .h_gallery_item:hover .g_img_item:before {
+      opacity: .85; }
+    .h_gallery_item:hover .g_img_item .light {
+      opacity: 1; }
+    .h_gallery_item:hover .g_item_text h4:hover {
+      color: #766dff; }
+  
+      @media screen and (max-width: 750px)
+      {
+        .backarrow{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: inline-block;
+            margin-left: 5%;
+            transform: scale(0.8,0.8); }
+          }
+
+          .behancebutton{
+            background: linear-gradient(115.11deg, #8251D1 18.65%, rgba(207, 77, 239, 0.94) 84.05%);
+            box-shadow: -3px 7px 10px 2px rgba(0, 0, 0, 0.19);
+            border-radius: 43px;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3vmin;
+            padding: 1.5vmin 6vmin 1.5vmin 6vmin;
+            /* identical to box height */
+            color: #FFFFFF;
+            display: grid;
+            margin: auto;
+            cursor: pointer;
+            transition: 1s;
+            margin-left: 0;
+            margin-bottom: 5%;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            }
+        .behancebutton:hover{
+            color:  #8251D1;
+            background: #FFFFFF;
+            transition: 1s;
+            outline: none;
+            border: none;
+            text-decoration: none;
+        }
+  /* End Gallery Area css */
